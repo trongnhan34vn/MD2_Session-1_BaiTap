@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Control from './components/Control';
-import ListStudent from './components/ListStudent';
+import ListStudents from './components/ListStudents';
 import Form from './components/Form';
 
 function App() {
@@ -9,20 +9,21 @@ function App() {
     <div className="App">
       <div className="row">
         <div className="col-lg-7 grid-margin stretch-card">
-          <div className="card">
             {/* START CONTROL */}
+          <div className="card">
             <Control/>
             {/* END CONTROL */}
             {/* START LIST STUDENT */}
-            <ListStudent/>
+            <ListStudents/>
             {/* END LIST STUDENT */}
           </div>
         </div>
+        <div className="col-5 grid-margin">
         {/* START FORM SINH VIEN */}
-        <Form/>
+          <Form/>
         {/* END FORM SINH VIÊN */}
+        </div>
       </div>
-
     </div>
   );
 }

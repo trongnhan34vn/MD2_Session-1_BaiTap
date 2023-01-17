@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
-import Students from './Students'
+import Student from './Student'
 
-
-export default class ListStudent extends Component {
+export default class ListStudents extends Component {
     render() {
         return (
             <div>
@@ -21,10 +20,9 @@ export default class ListStudent extends Component {
                                 </tr>
                             </thead>
                             <tbody>
-                                <Students></Students>
-                                <Students></Students>
-                                <Students></Students>
-                                
+                                <Student/>
+                                <Student/>
+                                <Student/>
                             </tbody>
                         </table>
                     </div>
