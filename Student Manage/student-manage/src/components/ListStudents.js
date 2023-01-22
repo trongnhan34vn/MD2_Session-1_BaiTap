@@ -3,6 +3,10 @@ import Student from './Student'
 
 export default class ListStudents extends Component {
     render() {
+        let { students } = this.props;
+        let elementListStudents = students.map((student, index) => {
+            return <Student key={student.studentId} stInfo={student} stt={index + 1} />
+        })
         return (
             <div>
                 <div className="card-body">
@@ -20,9 +24,7 @@ export default class ListStudents extends Component {
                                 </tr>
                             </thead>
                             <tbody>
-                                <Student/>
-                                <Student/>
-                                <Student/>
+                                {elementListStudents}
                             </tbody>
                         </table>
                     </div>

@@ -2,13 +2,14 @@ import React, { Component } from 'react'
 
 export default class Student extends Component {
     render() {
+        let {stInfo, stt} = this.props;
         return (
             <tr>
-                <td>1</td>
-                <td>SV001</td>
-                <td>Nguyễn Văn A</td>
-                <td>20</td>
-                <td>Nam</td>
+                <td>{stt}</td>
+                <td>{stInfo.studentId}</td>
+                <td>{stInfo.studentName}</td>
+                <td>{stInfo.studentAge}</td>
+                <td>{stInfo.studentGender?"Nam":"Nữ"}</td>
                 <td>
                     <div className="template-demo">
                         <button
